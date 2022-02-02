@@ -13,7 +13,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Mohave', sans-serif;
-  background-color: var(--light);
+  /* background-color: var(--light); */
   color: var(--dark);
 }
 
@@ -22,6 +22,8 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url('./background-images/white-recycle-paper-texture.png');
+  background-repeat: repeat;
 }
 
 .app{
@@ -46,6 +48,8 @@ body{
   height: 300px;
   background-color: var(--dark);
   object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid var(--dark);
 }
 
 .food-item h3{
@@ -65,7 +69,8 @@ body{
   height: 10px;
 }
 
-.order-for{
+.order-for
+{ 
   font-size: 1.75rem;
   margin-bottom: 30px;
 }
@@ -74,6 +79,31 @@ body{
   font-size: 1.25rem;
 }
 
-.order-name-input{
+.order-name{
+  margin-top:50px;
+}
+
+input{
   padding: 3px 5px;
+}
+
+.instructions-section{
+  margin-top: 30px;
+  font-size: 1.25rem;
+}
+
+.instructions-list-section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul{
+  margin: 30px 0 50px 0;
+  width: 300px;
+}
+
+li{
+  text-align: left;
 }

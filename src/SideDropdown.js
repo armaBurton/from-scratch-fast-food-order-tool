@@ -1,7 +1,6 @@
 import RenderDropdownItem from './RenderDropdownItem';
 
 export default function SideDropdown(props){
-  console.log(props);
 
   return <>
     Select a Side Item:&nbsp;
