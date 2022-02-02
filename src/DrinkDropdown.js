@@ -8,6 +8,6 @@ export default function DrinkDropdown(props){
       {
         props.drinkArr.map((item, i) => <RenderDropdownItem key={`${item}${i}]`} item={item} i={i} />)
       }
-    </select>;
+    </select>
   </>;
 }
