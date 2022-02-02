@@ -5,19 +5,21 @@ import React from 'react';
 import FoodDropdown from './FoodDropdown';
 import DrinkDropdown from './DrinkDropdown';
 import SideDropdown from './SideDropdown';
+import OrderNameInput from './OrderNameInput';
+
+const foodArr = [`Burger`, `Ramen`, `Pizza`];
+const drinkArr = [`Whiskey`, `Beer`, `Milkshake`];
+const sideArr = [`Cake`, `Fries`, `Salad`];
 
 function App() {
   const [foodId, setFoodId] = useState(1);
-  const foodArr = [`Burger`, `Ramen`, `Pizza`];
-
   const [drinkId, setDrinkId] = useState(1);
-  const drinkArr = [`Whiskey`, `Beer`, `Milkshake`];
-
   const [sideId, setSideId] = useState(1);
-  const sideArr = [`Cake`, `Fries`, `Salad`];
+  const [orderName, setOrderName] = useState(`New Customer`);
 
   return <div className='app'>
     <h1 className='FF-title'>Fast Food Ordering Tool</h1>
+    <h3 className='order-for'>Order for {orderName}</h3>
     <OrderImages 
       foodId={foodId}
       foodArr={foodArr}
@@ -37,6 +39,11 @@ function App() {
       <div>
         <SideDropdown setSideId={setSideId} sideArr={sideArr} />
       </div>
+    </section>
+    <section className='order-name'>
+      {
+        <OrderNameInput setOrderName={setOrderName}/>
+      }
     </section>
   </div>;
 }
