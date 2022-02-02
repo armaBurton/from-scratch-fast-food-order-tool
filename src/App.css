@@ -30,7 +30,7 @@ body{
 }
 
 .FF-title{
-  margin: 30px 0;
+  margin: 30px 0 5px 0;
 
   font-size: 3rem;
   text-shadow: 3px 3px 0px var(--red);
@@ -57,9 +57,23 @@ body{
   width: 100%;
   display: flex;
   gap: 20px;
+  margin-bottom: 30px;
 }
 
 .dropdown-section div{
   width: 300px;
   height: 10px;
+}
+
+.order-for{
+  font-size: 1.75rem;
+  margin-bottom: 30px;
+}
+
+.order-input{
+  font-size: 1.25rem;
+}
+
+.order-name-input{
+  padding: 3px 5px;
 }
